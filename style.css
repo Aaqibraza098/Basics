@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(255, 255, 255);
+    
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+/* FOR MOBILE */
+@media only screen and (max-width:600px){
+
+    .error-name{
+   
+        font-size: 7rem;
+        color: #272727;
+        
+    }
+    .description{
+        width: 90%;
+    }
+  
+}
+
+
+
+/* FOR PC */
+@media only screen and (min-width:600px){
+
+    .error-name{
+   
+        font-size: 10rem;
+        color: #272727;
+    }
+  
+   
+}
+    
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+
+.error-name{
+   
+    
+    
+    font-family: 'Rubik Mono One', sans-serif;
+    transition: .3s;
+    text-align: center;
+    
+
+}
+
+.description{
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+.description > p{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    
+    width: 100%;
+}
+
+p > span {
+    color: rgb(255, 0, 98);
+}
+
+
+.else-buttons{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.else-buttons > a > button{
+    color: rgb(255, 255, 255);
+    background-color: #272727;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    transition: .1s;
+    cursor: pointer;
+    
+}
+.error-name:hover{
+    
+    color: rgb(255, 0, 98);
+   
+}
+
+.else-buttons > a >button:hover{
+    background-color: #666666;
+}
+
+
+
+
+
+
